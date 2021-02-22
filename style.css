@@ -1,0 +1,348 @@
+/* reset */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+button,
+select {
+  cursor: pointer;
+}
+button {
+  border: 0;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+}
+
+/*header*/
+
+.header {
+  width: 100%;
+  background-color: #0B346E;
+}
+
+.calculator {
+  max-width: 650px;
+  padding: 30px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label {
+  color: #ffd366;
+  font-size: 18px;
+  display: block;
+  padding-bottom: 2px;
+}
+input {
+  margin-bottom: 20px;
+  width: 250px;
+  padding: 5px;
+  padding-left: 10px;
+  border-radius: 10px;
+  font-size: 24px;
+  background-color: rgba(255, 255, 255, 0.18);
+  border: 2px solid #ffd366;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.send {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 0;
+  background-color: #ffd366;
+  font-size: 24px;
+}
+
+/*header-change*/
+.result {
+  background: #0B346E;
+  height: 123px;
+  width: 123px;
+  border-radius: 50%;
+  padding-top: 30px;
+  border: 6px solid;
+}
+
+.bmi {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.bmi-value {
+  font-size: 32px;
+}
+
+.bmi h3 {
+  font-size: 14px;
+}
+
+.loop {
+  border: 3px solid #0B346E;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding-top: 3px;
+  position: relative;
+  left: 75px;
+  cursor: pointer;
+}
+
+.loop img {
+  position: relative;
+  left: 5px;
+}
+
+.result-status {
+  font-size: 24px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.send:hover {
+  background: #ffd366;
+  box-shadow: 0 1px 6px 3px rgba(255, 195, 49, 0.64);
+}
+
+.send:active {
+  background: #dea921;
+}
+
+/*content*/
+
+.content {
+  background-color: #f5f5f5;
+}
+.record {
+  padding-top: 50px;
+  padding-bottom: 110px;
+}
+h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0B346E;
+}
+
+/*content-change*/
+
+.list {
+  width: 50%;
+  margin: 0 auto;
+}
+.list li {
+  padding: 20px;
+  background: #fff;
+  margin-bottom: 16px;
+}
+
+.level {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  color: #424242;
+  border-left: 5px solid #000;
+}
+
+.small {
+  font-weight: light;
+  font-size: 10px;
+  padding-right: 2px;
+}
+
+.interval {
+  padding: 0 20px;
+}
+
+li a {
+  color: red;
+}
+
+.d-none {
+  display: none;
+}
+
+.del {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.clear {
+  padding: 10px;
+  font-size: 15px;
+}
+
+/*footer*/
+.wrapper{
+  min-height: 100%;
+  margin-bottom: -90px;
+}
+.footer {
+  background-color: #0B346E;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .logo {
+  height: 55px;
+}
+@media screen and (max-width: 1024px) {
+  .list{
+    width: 65%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .list{
+    width: 75%;
+  }
+}
+@media screen and (max-width: 414px) {
+  .level{
+    flex-direction: column;
+    border: 0;
+    border-top: 5px solid #000;
+  }
+  span,.interval{
+    padding: 10px;
+  }
+  .calculator{
+    flex-direction: column;
+  }
+}
